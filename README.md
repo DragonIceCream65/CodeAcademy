@@ -13,16 +13,26 @@ La aplicación implementa el patrón arquitectónico MVP (Model-View-Presenter),
 Este sistema fue diseñado para dar solución a las siguientes problemáticas:
 
 ❌ Desorganización del contenido educativo
+
 → Centraliza cursos y lecciones en una sola aplicación.
+
 ❌ Dificultad para gestionar información de cursos
+
 → Permite estructurar datos de cursos, estudiantes y lecciones.
+
 ❌ Acoplamiento entre interfaz y lógica
+
 → Implementa MVP para separar responsabilidades.
+
 ❌ Aplicaciones difíciles de mantener
+
 → Uso de buenas prácticas que facilitan futuras mejoras.
+
 🧱 Arquitectura del sistema
 
+
 El proyecto implementa el patrón MVP (Model - View - Presenter):
+
 
 Model: Representa los datos (Course, Student, Lesson).
 View: Formularios de Windows Forms (MainForm, CourseDetailForm).
@@ -31,6 +41,7 @@ Presenter: Contiene la lógica del sistema (CoursePresenter, MainPresenter).
 Además, se incluye una capa de acceso a datos mediante Repository.
 
 🛠️ Tecnologías utilizadas
+
 Lenguaje: C#
 Framework: .NET (Windows Forms)
 IDE: Visual Studio
@@ -40,6 +51,7 @@ Plataforma de repositorio: GitHub
 
 Antes de ejecutar el proyecto, asegúrate de tener instalado:
 
+
 ✅ Sistema operativo: Windows 10 o superior
 ✅ Visual Studio (recomendado 2019 o superior)
 ✅ .NET Framework / .NET SDK compatible con WinForms
@@ -47,6 +59,7 @@ Antes de ejecutar el proyecto, asegúrate de tener instalado:
 🚀 Instalación y ejecución
 
 Sigue estos pasos para ejecutar el proyecto:
+
 
 1. Clonar el repositorio
 git clone https://github.com/DragonIceCream65/CodeAcademy.git
@@ -57,6 +70,8 @@ Busca el archivo .sln del proyecto
 3. Ejecutar la aplicación
 Presiona F5 o haz clic en Iniciar
 Se abrirá la aplicación Windows Forms
+
+
 
 👥 Integrantes
 👤 Integrante 1: Brigitte Lopez Torres 
