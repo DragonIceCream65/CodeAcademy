@@ -53,21 +53,30 @@ Antes de ejecutar el proyecto, asegúrate de tener instalado:
 
 
 ✅ Sistema operativo: Windows 10 o superior
+
 ✅ Visual Studio (recomendado 2019 o superior)
+
 ✅ .NET Framework / .NET SDK compatible con WinForms
+
 ✅ Git (opcional, para clonar el repositorio)
 🚀 Instalación y ejecución
 
 Sigue estos pasos para ejecutar el proyecto:
 
 
+
 1. Clonar el repositorio
 git clone https://github.com/DragonIceCream65/CodeAcademy.git
+
 2. Abrir el proyecto
-Abre Visual Studio
-Selecciona "Abrir proyecto o solución"
-Busca el archivo .sln del proyecto
-3. Ejecutar la aplicación
+
+3.Abre Visual Studio
+
+4.Selecciona "Abrir proyecto o solución"
+
+5.Busca el archivo .sln del proyecto
+
+6. Ejecutar la aplicación
 Presiona F5 o haz clic en Iniciar
 Se abrirá la aplicación Windows Forms
 
