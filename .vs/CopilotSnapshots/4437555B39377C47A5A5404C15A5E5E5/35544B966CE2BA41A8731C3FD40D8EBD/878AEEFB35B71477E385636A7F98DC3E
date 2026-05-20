@@ -1,0 +1,502 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Windows.Forms;
+using CodeAcademy.Controls;
+using CodeAcademy.Data;
+using CodeAcademy.Models;
+using CodeAcademy.Presenters;
+
+namespace CodeAcademy.Views
+{
+    public class MainForm : Form, IMainView
+    {
+        // ─── Controles ───
+        private Panel pnlSidebar;
+        private Panel pnlTopBar;
+        private Panel pnlContent;
+        private FlowLayoutPanel flpCourses;
+        // Presenter almacenado para controlar su ciclo de vida
+        private MainPresenter _presenter;
+        private TextBox txtSearch;
+        private ListBox lstCategories;
+        private Label lblTitle;
+        private Label lblSubtitle;
+        private Label lblCoursesCount;
+        private Panel pnlSearchBox;
+
+        // ─── IMainView ───
+        public string SearchText => txtSearch.Text;
+        public string SelectedCategory => lstCategories.SelectedItem?.ToString() ?? "Todos";
+        public event EventHandler SearchChanged;
+        public event EventHandler CategoryChanged;
+        public event Action<Course> CourseSelected;
+
+        // ─── Paleta de colores ───
+        private readonly Color ColPrimary = Color.FromArgb(15, 23, 42);
+        private readonly Color ColSidebar = Color.FromArgb(10, 16, 36);
+        private readonly Color ColAccent = Color.FromArgb(99, 102, 241);
+        private readonly Color ColAccentLight = Color.FromArgb(129, 140, 248);
+        private readonly Color ColBg = Color.FromArgb(245, 247, 255);
+        private readonly Color ColText = Color.FromArgb(248, 250, 252);
+        private readonly Color ColMuted = Color.FromArgb(148, 163, 184);
+
+        public MainForm()
+        {
+            SetupForm();
+            BuildSidebar();
+            BuildTopBar();
+            BuildContent();           // ← construye el área de tarjetas
+            WireResize();             // ← conecta el evento de redimensión
+
+            // Crear presenter pero posponer la carga de datos hasta el evento Load
+            _presenter = new MainPresenter(this, new CourseRepository());
+            this.Load += (s, e) => _presenter.LoadCourses();
+        }
+
+        // ══════════════════════════════════════════════════════
+        //  CONFIGURACIÓN GENERAL DEL FORM
+        // ══════════════════════════════════════════════════════
+        private void SetupForm()
+        {
+            Text = "CodeAcademy — Aprende a programar";
+            Size = new Size(1200, 780);
+            MinimumSize = new Size(900, 600);
+            StartPosition = FormStartPosition.CenterScreen;
+            BackColor = ColBg;
+            Font = new Font("Segoe UI", 9f);
+            DoubleBuffered = true;
+        }
+
+        // ══════════════════════════════════════════════════════
+        //  SIDEBAR
+        // ══════════════════════════════════════════════════════
+        private void BuildSidebar()
+        {
+            pnlSidebar = new Panel
+            {
+                Dock = DockStyle.Left,
+                Width = 230,
+                BackColor = ColSidebar
+            };
+
+            // ── Logo ──
+            var pnlLogo = new Panel
+            {
+                Height = 80,
+                Dock = DockStyle.Top,
+                BackColor = Color.FromArgb(8, 12, 28)
+            };
+            pnlLogo.Paint += (s, e) =>
+            {
+                var g = e.Graphics;
+                g.SmoothingMode = SmoothingMode.AntiAlias;
+
+                using var accentBrush = new LinearGradientBrush(
+                    new Rectangle(16, 22, 36, 36),
+                    ColAccent, ColAccentLight, 135f);
+                g.FillEllipse(accentBrush, 16, 22, 36, 36);
+
+                TextRenderer.DrawText(g, "⚡",
+                    new Font("Segoe UI Emoji", 14f),
+                    new Rectangle(16, 22, 36, 36), Color.White,
+                    TextFormatFlags.HorizontalCenter | TextFormatFlags.VerticalCenter);
+
+                TextRenderer.DrawText(g, "CodeAcademy",
+                    new Font("Segoe UI", 12f, FontStyle.Bold),
+                    new Rectangle(60, 22, 155, 36), ColText,
+                    TextFormatFlags.VerticalCenter | TextFormatFlags.Left);
+            };
+
+            // ── Separador ──
+            var sep1 = new Panel
+            {
+                Height = 1,
+                Dock = DockStyle.Top,
+                BackColor = Color.FromArgb(30, 255, 255, 255)
+            };
+
+            // ── Etiqueta "CATEGORÍAS" ──
+            var lblCat = new Label
+            {
+                Text = "CATEGORÍAS",
+                Dock = DockStyle.Top,
+                Height = 40,
+                ForeColor = ColMuted,
+                Font = new Font("Segoe UI", 7.5f, FontStyle.Bold),
+                TextAlign = ContentAlignment.MiddleLeft,
+                Padding = new Padding(20, 0, 0, 0)
+            };
+
+            // ── Lista de categorías ──
+            lstCategories = new ListBox
+            {
+                Dock = DockStyle.Top,
+                Height = 228,
+                BackColor = ColSidebar,
+                ForeColor = ColText,
+                BorderStyle = BorderStyle.None,
+                Font = new Font("Segoe UI", 9.5f),
+                ItemHeight = 38,
+                DrawMode = DrawMode.OwnerDrawFixed
+            };
+            lstCategories.Items.AddRange(new object[]
+                { "Todos", "Programming", "Git", "GitHub", "SQL", "Web" });
+            lstCategories.SelectedIndex = 0;
+            lstCategories.DrawItem += DrawSidebarItem;
+            lstCategories.SelectedIndexChanged += (s, e) =>
+                CategoryChanged?.Invoke(this, e);
+
+            // ── Separador 2 ──
+            var sep2 = new Panel
+            {
+                Height = 1,
+                Dock = DockStyle.Top,
+                BackColor = Color.FromArgb(30, 255, 255, 255)
+            };
+
+            // ── Panel usuario (parte inferior) ──
+            var pnlUser = new Panel
+            {
+                Height = 70,
+                Dock = DockStyle.Bottom,
+                BackColor = Color.FromArgb(8, 12, 28),
+                Padding = new Padding(16, 14, 16, 14)
+            };
+            pnlUser.Paint += (s, e) =>
+            {
+                var g = e.Graphics;
+                g.SmoothingMode = SmoothingMode.AntiAlias;
+
+                using var avBrush = new LinearGradientBrush(
+                    new Rectangle(0, 8, 38, 38),
+                    ColAccent, ColAccentLight, 135f);
+                g.FillEllipse(avBrush, 0, 8, 38, 38);
+
+                TextRenderer.DrawText(g, "👤",
+                    new Font("Segoe UI Emoji", 13f),
+                    new Rectangle(0, 8, 38, 38), Color.White,
+                    TextFormatFlags.HorizontalCenter | TextFormatFlags.VerticalCenter);
+
+                TextRenderer.DrawText(g, "Estudiante",
+                    new Font("Segoe UI", 9f, FontStyle.Bold),
+                    new Rectangle(46, 8, 160, 22), ColText,
+                    TextFormatFlags.Left | TextFormatFlags.VerticalCenter);
+
+                TextRenderer.DrawText(g, "Nivel: Principiante",
+                    new Font("Segoe UI", 7.5f),
+                    new Rectangle(46, 30, 160, 18), ColMuted,
+                    TextFormatFlags.Left | TextFormatFlags.VerticalCenter);
+            };
+
+            pnlSidebar.Controls.Add(pnlUser);
+            pnlSidebar.Controls.Add(sep2);
+            pnlSidebar.Controls.Add(lstCategories);
+            pnlSidebar.Controls.Add(lblCat);
+            pnlSidebar.Controls.Add(sep1);
+            pnlSidebar.Controls.Add(pnlLogo);
+
+            Controls.Add(pnlSidebar);
+        }
+
+        private void DrawSidebarItem(object sender, DrawItemEventArgs e)
+        {
+            if (e.Index < 0) return;
+            var lb = (ListBox)sender;
+            string item = lb.Items[e.Index].ToString();
+            bool selected = (e.State & DrawItemState.Selected) != 0;
+
+            e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+
+            Color bgColor = selected
+                ? Color.FromArgb(30, ColAccent.R, ColAccent.G, ColAccent.B)
+                : ColSidebar;
+
+            using (var bgBrush = new SolidBrush(bgColor))
+                e.Graphics.FillRectangle(bgBrush, e.Bounds);
+
+            if (selected)
+            {
+                using var accentBrush = new SolidBrush(ColAccent);
+                e.Graphics.FillRectangle(accentBrush,
+                    e.Bounds.X, e.Bounds.Y + 4, 3, e.Bounds.Height - 8);
+            }
+
+            string emoji = item switch
+            {
+                "Todos" => "🏠",
+                "Programming" => "💻",
+                "Git" => "🌿",
+                "GitHub" => "🐙",
+                "SQL" => "🗄️",
+                "Web" => "🌐",
+                _ => "📂"
+            };
+
+            TextRenderer.DrawText(e.Graphics, emoji,
+                new Font("Segoe UI Emoji", 11f),
+                new Rectangle(e.Bounds.X + 18, e.Bounds.Y, 28, e.Bounds.Height),
+                ColText,
+                TextFormatFlags.VerticalCenter | TextFormatFlags.Left);
+
+            TextRenderer.DrawText(e.Graphics, item,
+                new Font("Segoe UI", 9.5f, selected ? FontStyle.Bold : FontStyle.Regular),
+                new Rectangle(e.Bounds.X + 50, e.Bounds.Y, e.Bounds.Width - 55, e.Bounds.Height),
+                selected ? ColAccentLight : Color.FromArgb(200, 210, 230),
+                TextFormatFlags.VerticalCenter | TextFormatFlags.Left);
+        }
+
+        // ══════════════════════════════════════════════════════
+        //  TOPBAR
+        // ══════════════════════════════════════════════════════
+        private void BuildTopBar()
+        {
+            pnlTopBar = new Panel
+            {
+                Dock = DockStyle.Top,
+                Height = 78,
+                BackColor = Color.White,
+                Padding = new Padding(28, 0, 28, 0)
+            };
+            pnlTopBar.Paint += (s, e) =>
+            {
+                using var pen = new Pen(Color.FromArgb(220, 225, 240), 1f);
+                e.Graphics.DrawLine(pen, 0, pnlTopBar.Height - 1,
+                    pnlTopBar.Width, pnlTopBar.Height - 1);
+            };
+
+            lblTitle = new Label
+            {
+                Text = "Explorar Cursos",
+                Font = new Font("Segoe UI", 17f, FontStyle.Bold),
+                ForeColor = ColPrimary,
+                AutoSize = true,
+                Location = new Point(28, 12)
+            };
+
+            lblSubtitle = new Label
+            {
+                Text = "Aprende a tu ritmo con contenido de calidad",
+                Font = new Font("Segoe UI", 9f),
+                ForeColor = Color.FromArgb(130, 140, 165),
+                AutoSize = true,
+                Location = new Point(29, 44)
+            };
+
+            // ── Search box ──
+            pnlSearchBox = new Panel
+            {
+                Size = new Size(290, 40),
+                BackColor = Color.FromArgb(243, 245, 255),
+                Cursor = Cursors.IBeam
+            };
+            pnlSearchBox.Paint += (s, e) =>
+            {
+                var g = e.Graphics;
+                g.SmoothingMode = SmoothingMode.AntiAlias;
+                var rect = new Rectangle(0, 0, pnlSearchBox.Width - 1, pnlSearchBox.Height - 1);
+                using var path = MakeRoundedPath(rect, 10);
+                using var bgBrush = new SolidBrush(Color.FromArgb(243, 245, 255));
+                using var borderPen = new Pen(Color.FromArgb(210, 215, 240), 1.5f);
+                g.FillPath(bgBrush, path);
+                g.DrawPath(borderPen, path);
+                TextRenderer.DrawText(g, "🔍",
+                    new Font("Segoe UI Emoji", 10f),
+                    new Rectangle(8, 0, 28, 40),
+                    Color.FromArgb(150, 160, 190),
+                    TextFormatFlags.VerticalCenter | TextFormatFlags.HorizontalCenter);
+            };
+
+            txtSearch = new TextBox
+            {
+                BorderStyle = BorderStyle.None,
+                Font = new Font("Segoe UI", 9.5f),
+                ForeColor = ColPrimary,
+                BackColor = Color.FromArgb(243, 245, 255),
+                PlaceholderText = "Buscar cursos...",
+                Size = new Size(244, 22),
+                Location = new Point(36, 9)
+            };
+            txtSearch.TextChanged += (s, e) => SearchChanged?.Invoke(this, e);
+            pnlSearchBox.Controls.Add(txtSearch);
+
+            lblCoursesCount = new Label
+            {
+                Font = new Font("Segoe UI", 8.5f),
+                ForeColor = Color.FromArgb(140, 150, 175),
+                AutoSize = true,
+                TextAlign = ContentAlignment.MiddleRight
+            };
+
+            pnlTopBar.Controls.Add(lblTitle);
+            pnlTopBar.Controls.Add(lblSubtitle);
+            pnlTopBar.Controls.Add(pnlSearchBox);
+            pnlTopBar.Controls.Add(lblCoursesCount);
+
+            // ── Posicionar searchbox y contador a la derecha ──
+            PositionTopBarRight();
+            pnlTopBar.Resize += (s, e) => PositionTopBarRight();
+
+            Controls.Add(pnlTopBar);
+        }
+
+        // Centraliza la lógica de posicionamiento derecho del topbar
+        // CAMBIO: antes estaba inline en el lambda; ahora es un método
+        // para poder llamarlo también en el primer render (antes del Resize)
+        private void PositionTopBarRight()
+        {
+            pnlSearchBox.Location = new Point(pnlTopBar.Width - 318, 18);
+            lblCoursesCount.Location = new Point(pnlTopBar.Width - 318, 60);
+        }
+
+        // ══════════════════════════════════════════════════════
+        //  ÁREA DE TARJETAS
+        // ══════════════════════════════════════════════════════
+        private void BuildContent()
+        {
+            // Panel contenedor con padding visual uniforme
+            pnlContent = new Panel
+            {
+                Dock = DockStyle.Fill,
+                BackColor = ColBg,
+                Padding = new Padding(20, 20, 20, 20),
+                AutoScroll = false   // el scroll lo maneja flpCourses
+            };
+
+            // FlowLayoutPanel: distribuye las tarjetas en filas
+            flpCourses = new FlowLayoutPanel
+            {
+                Dock = DockStyle.Fill,
+                AutoScroll = true,
+                WrapContents = true,
+                BackColor = ColBg,
+                FlowDirection = FlowDirection.LeftToRight,
+                // CAMBIO CLAVE: Padding interno para que las tarjetas
+                // no toquen los bordes del panel
+                Padding = new Padding(8, 8, 8, 8)
+            };
+
+            pnlContent.Controls.Add(flpCourses);
+            Controls.Add(pnlContent);
+        }
+
+        // NUEVO MÉTODO: conecta el Resize del FlowPanel
+        // Se llama desde el constructor DESPUÉS de que todo está creado
+        private void WireResize()
+        {
+            flpCourses.Resize += (s, e) => RecalcCardSizes();
+        }
+
+        // ══════════════════════════════════════════════════════
+        //  CÁLCULO RESPONSIVO DEL TAMAÑO DE TARJETAS
+        // ══════════════════════════════════════════════════════
+
+        // CAMBIO PRINCIPAL: antes las tarjetas tenían Size fijo (260x200).
+        // Ahora se calcula el ancho disponible, se divide entre columnas
+        // y cada tarjeta recibe ese ancho exacto → quedan perfectamente
+        // alineadas sin huecos ni desbordamientos.
+        private void RecalcCardSizes()
+        {
+            if (flpCourses.Controls.Count == 0) return;
+
+            flpCourses.SuspendLayout();
+
+            int gap = 14;          // espacio entre tarjetas
+            int minCardW = 255;         // ancho mínimo por tarjeta
+            int available = flpCourses.ClientSize.Width
+                               - flpCourses.Padding.Horizontal;
+
+            // ¿Cuántas columnas caben?
+            int columns = Math.Max(1, (available + gap) / (minCardW + gap));
+
+            // Ancho exacto para cada tarjeta
+            int cardW = (available - gap * (columns - 1)) / columns;
+            cardW = Math.Max(minCardW, cardW);
+
+            foreach (Control ctrl in flpCourses.Controls)
+            {
+                ctrl.Width = cardW;
+                ctrl.Height = 205;
+                // Margen: mitad del gap en cada lado horizontal,
+                // 7 px arriba y abajo
+                ctrl.Margin = new Padding(gap / 2, 7, gap / 2, 7);
+            }
+
+            flpCourses.ResumeLayout();
+        }
+
+        // ══════════════════════════════════════════════════════
+        //  IMainView — DisplayCourses
+        // ══════════════════════════════════════════════════════
+        public void DisplayCourses(List<Course> courses)
+        {
+            flpCourses.SuspendLayout();
+            flpCourses.Controls.Clear();
+
+            // Calcular tamaño inicial (antes del primer Resize)
+            int gap = 14;
+            int minCardW = 255;
+            int available = flpCourses.ClientSize.Width
+                            - flpCourses.Padding.Horizontal;
+
+            // Si el panel todavía no tiene ancho real (primer render),
+            // usar el ancho del Form menos el sidebar como estimación
+            if (available <= 0)
+                available = Width - pnlSidebar.Width - 60;
+
+            int columns = Math.Max(1, (available + gap) / (minCardW + gap));
+            int cardW = (available - gap * (columns - 1)) / columns;
+            cardW = Math.Max(minCardW, cardW);
+
+            foreach (var course in courses)
+            {
+                var card = new CourseCardControl(course)
+                {
+                    Width = cardW,
+                    Height = 205,
+                    Margin = new Padding(gap / 2, 7, gap / 2, 7)
+                };
+                card.CourseClicked += OnCourseClicked;
+                flpCourses.Controls.Add(card);
+            }
+
+            lblCoursesCount.Text =
+                $"{courses.Count} curso{(courses.Count != 1 ? "s" : "")} " +
+                $"encontrado{(courses.Count != 1 ? "s" : "")}";
+
+            flpCourses.ResumeLayout();
+
+            // Forzar recálculo tras el layout inicial
+            flpCourses.BeginInvoke(new Action(RecalcCardSizes));
+        }
+
+        // ══════════════════════════════════════════════════════
+        //  EVENTOS
+        // ══════════════════════════════════════════════════════
+        private void OnCourseClicked(Course course)
+        {
+            var detailForm = new CourseDetailForm(course);
+            detailForm.ShowDialog(this);
+        }
+
+        public void ShowMessage(string message) =>
+            MessageBox.Show(message, "CodeAcademy",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        // ══════════════════════════════════════════════════════
+        //  HELPERS
+        // ══════════════════════════════════════════════════════
+        private GraphicsPath MakeRoundedPath(Rectangle rect, int radius)
+        {
+            var path = new GraphicsPath();
+            int d = radius * 2;
+            path.AddArc(rect.X, rect.Y, d, d, 180, 90);
+            path.AddArc(rect.Right - d, rect.Y, d, d, 270, 90);
+            path.AddArc(rect.Right - d, rect.Bottom - d, d, d, 0, 90);
+            path.AddArc(rect.X, rect.Bottom - d, d, d, 90, 90);
+            path.CloseFigure();
+            return path;
+        }
+    }
+}
