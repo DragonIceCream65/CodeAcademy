@@ -3,72 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|c:\\users\\sebas\\source\\repos\\codeacademy\\codeacademy\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|solutionrelative:codeacademy\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{923D9C4D-245D-BF03-A8B4-D7AFDAED6A51}|CodeAcademy\\Presenters.csproj|c:\\users\\sebas\\source\\repos\\codeacademy\\codeacademy\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{923D9C4D-245D-BF03-A8B4-D7AFDAED6A51}|CodeAcademy\\Presenters.csproj|solutionrelative:codeacademy\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|c:\\users\\sebas\\source\\repos\\codeacademy\\codeacademy\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|solutionrelative:codeacademy\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{923D9C4D-245D-BF03-A8B4-D7AFDAED6A51}|CodeAcademy\\Presenters.csproj|c:\\users\\sebas\\source\\repos\\codeacademy\\codeacademy\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{923D9C4D-245D-BF03-A8B4-D7AFDAED6A51}|CodeAcademy\\Presenters.csproj|solutionrelative:codeacademy\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|c:\\users\\sebas\\source\\repos\\codeacademy\\codeacademy\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{923D9C4D-245D-BF03-A8B4-D7AFDAED6A51}|CodeAcademy\\Presenters.csproj|c:\\users\\sebas\\source\\repos\\codeacademy\\codeacademy\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{923D9C4D-245D-BF03-A8B4-D7AFDAED6A51}|CodeAcademy\\Presenters.csproj|solutionrelative:codeacademy\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{923D9C4D-245D-BF03-A8B4-D7AFDAED6A51}|CodeAcademy\\Presenters.csproj|c:\\users\\sebas\\source\\repos\\codeacademy\\codeacademy\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{923D9C4D-245D-BF03-A8B4-D7AFDAED6A51}|CodeAcademy\\Presenters.csproj|solutionrelative:codeacademy\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|C:\\Users\\sebas\\source\\repos\\CodeAcademy\\codeacademy\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|solutionrelative:codeacademy\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|c:\\users\\sebas\\source\\repos\\codeacademy\\codeacademy\\views\\coursedetailform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|solutionrelative:codeacademy\\views\\coursedetailform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{923D9C4D-245D-BF03-A8B4-D7AFDAED6A51}|CodeAcademy\\Presenters.csproj|C:\\Users\\sebas\\source\\repos\\CodeAcademy\\codeacademy\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{923D9C4D-245D-BF03-A8B4-D7AFDAED6A51}|CodeAcademy\\Presenters.csproj|solutionrelative:codeacademy\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|c:\\users\\sebas\\source\\repos\\codeacademy\\codeacademy\\controls\\coursecardcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|solutionrelative:codeacademy\\controls\\coursecardcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{923D9C4D-245D-BF03-A8B4-D7AFDAED6A51}|CodeAcademy\\Presenters.csproj|c:\\users\\sebas\\source\\repos\\codeacademy\\codeacademy\\presenters\\coursepresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{923D9C4D-245D-BF03-A8B4-D7AFDAED6A51}|CodeAcademy\\Presenters.csproj|solutionrelative:codeacademy\\presenters\\coursepresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|c:\\users\\sebas\\source\\repos\\codeacademy\\codeacademy\\presenters\\coursepresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|solutionrelative:codeacademy\\presenters\\coursepresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{923D9C4D-245D-BF03-A8B4-D7AFDAED6A51}|CodeAcademy\\Presenters.csproj|c:\\users\\sebas\\source\\repos\\codeacademy\\codeacademy\\models\\lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{923D9C4D-245D-BF03-A8B4-D7AFDAED6A51}|CodeAcademy\\Presenters.csproj|solutionrelative:codeacademy\\models\\lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|c:\\users\\sebas\\source\\repos\\codeacademy\\codeacademy\\presenters\\mainpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|solutionrelative:codeacademy\\presenters\\mainpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|c:\\users\\sebas\\source\\repos\\codeacademy\\codeacademy\\views\\icourseview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|solutionrelative:codeacademy\\views\\icourseview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|c:\\users\\sebas\\source\\repos\\codeacademy\\codeacademy\\views\\imainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|solutionrelative:codeacademy\\views\\imainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|c:\\users\\sebas\\source\\repos\\codeacademy\\codeacademy\\data\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|solutionrelative:codeacademy\\data\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|c:\\users\\sebas\\source\\repos\\codeacademy\\codeacademy\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|solutionrelative:codeacademy\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|c:\\users\\sebas\\source\\repos\\codeacademy\\codeacademy\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|solutionrelative:codeacademy\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|c:\\users\\sebas\\source\\repos\\codeacademy\\codeacademy\\models\\lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|solutionrelative:codeacademy\\models\\lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|c:\\users\\sebas\\source\\repos\\codeacademy\\codeacademy\\models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|solutionrelative:codeacademy\\models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|c:\\users\\sebas\\source\\repos\\codeacademy\\codeacademy\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|solutionrelative:codeacademy\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\CodeAcademy.csproj|c:\\users\\sebas\\source\\repos\\codeacademy\\codeacademy\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\CodeAcademy.csproj|solutionrelative:codeacademy\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|c:\\users\\sebas\\source\\repos\\codeacademy\\codeacademy\\controls\\centeredflowlayoutpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA376D63-C542-4C77-9B48-85C1ABB9CB03}|CodeAcademy\\Presenters.csproj|solutionrelative:codeacademy\\controls\\centeredflowlayoutpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{923D9C4D-245D-BF03-A8B4-D7AFDAED6A51}|CodeAcademy\\Presenters.csproj|c:\\users\\sebas\\source\\repos\\codeacademy\\codeacademy\\models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{923D9C4D-245D-BF03-A8B4-D7AFDAED6A51}|CodeAcademy\\Presenters.csproj|solutionrelative:codeacademy\\models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,21 +46,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "CenteredFlowLayoutPanel.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Controls\\CenteredFlowLayoutPanel.cs",
-              "RelativeDocumentMoniker": "CodeAcademy\\Controls\\CenteredFlowLayoutPanel.cs",
-              "ToolTip": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Controls\\CenteredFlowLayoutPanel.cs",
-              "RelativeToolTip": "CodeAcademy\\Controls\\CenteredFlowLayoutPanel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T03:22:09.399Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -101,183 +56,26 @@
               "RelativeDocumentMoniker": "CodeAcademy\\Views\\MainForm.cs",
               "ToolTip": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Views\\MainForm.cs",
               "RelativeToolTip": "CodeAcademy\\Views\\MainForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAPYAAAAAAAAAAAAAAOwAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T23:47:23.351Z",
-              "IsPinned": true,
+              "WhenOpened": "2026-05-20T20:35:18.139Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Program.cs",
-              "RelativeDocumentMoniker": "CodeAcademy\\Program.cs",
-              "ToolTip": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Program.cs",
-              "RelativeToolTip": "CodeAcademy\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T23:48:07.105Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "MainForm.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Views\\MainForm.cs",
               "RelativeDocumentMoniker": "CodeAcademy\\Views\\MainForm.cs",
               "ToolTip": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Views\\MainForm.cs [Dise\u00F1o]",
               "RelativeToolTip": "CodeAcademy\\Views\\MainForm.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T23:55:37.201Z",
+              "WhenOpened": "2026-05-20T20:27:28.741Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CourseDetailForm.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Views\\CourseDetailForm.cs",
-              "RelativeDocumentMoniker": "CodeAcademy\\Views\\CourseDetailForm.cs",
-              "ToolTip": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Views\\CourseDetailForm.cs",
-              "RelativeToolTip": "CodeAcademy\\Views\\CourseDetailForm.cs",
-              "ViewState": "AgIAAGkBAAAAAAAAAAAgwJABAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T23:47:51.234Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CourseCardControl.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Controls\\CourseCardControl.cs",
-              "RelativeDocumentMoniker": "CodeAcademy\\Controls\\CourseCardControl.cs",
-              "ToolTip": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Controls\\CourseCardControl.cs",
-              "RelativeToolTip": "CodeAcademy\\Controls\\CourseCardControl.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwAYAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T23:46:57.561Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CoursePresenter.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Presenters\\CoursePresenter.cs",
-              "RelativeDocumentMoniker": "CodeAcademy\\Presenters\\CoursePresenter.cs",
-              "ToolTip": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Presenters\\CoursePresenter.cs",
-              "RelativeToolTip": "CodeAcademy\\Presenters\\CoursePresenter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T23:46:27.279Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainPresenter.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Presenters\\MainPresenter.cs",
-              "RelativeDocumentMoniker": "CodeAcademy\\Presenters\\MainPresenter.cs",
-              "ToolTip": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Presenters\\MainPresenter.cs",
-              "RelativeToolTip": "CodeAcademy\\Presenters\\MainPresenter.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwDcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T23:46:12.752Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ICourseView.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Views\\ICourseView.cs",
-              "RelativeDocumentMoniker": "CodeAcademy\\Views\\ICourseView.cs",
-              "ToolTip": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Views\\ICourseView.cs",
-              "RelativeToolTip": "CodeAcademy\\Views\\ICourseView.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T23:45:56.573Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ImainView.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Views\\ImainView.cs",
-              "RelativeDocumentMoniker": "CodeAcademy\\Views\\ImainView.cs",
-              "ToolTip": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Views\\ImainView.cs",
-              "RelativeToolTip": "CodeAcademy\\Views\\ImainView.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T23:45:35.555Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CourseRepository.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Data\\CourseRepository.cs",
-              "RelativeDocumentMoniker": "CodeAcademy\\Data\\CourseRepository.cs",
-              "ToolTip": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Data\\CourseRepository.cs",
-              "RelativeToolTip": "CodeAcademy\\Data\\CourseRepository.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAgwHcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T23:45:12.884Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Models\\Student.cs",
-              "RelativeDocumentMoniker": "CodeAcademy\\Models\\Student.cs",
-              "ToolTip": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Models\\Student.cs",
-              "RelativeToolTip": "CodeAcademy\\Models\\Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T23:44:52.451Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Course.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Models\\Course.cs",
-              "RelativeDocumentMoniker": "CodeAcademy\\Models\\Course.cs",
-              "ToolTip": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Models\\Course.cs",
-              "RelativeToolTip": "CodeAcademy\\Models\\Course.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T23:44:28.714Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Lesson.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Models\\Lesson.cs",
-              "RelativeDocumentMoniker": "CodeAcademy\\Models\\Lesson.cs",
-              "ToolTip": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Models\\Lesson.cs",
-              "RelativeToolTip": "CodeAcademy\\Models\\Lesson.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAIwBMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T23:44:13.615Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Enums.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Models\\Enums.cs",
-              "RelativeDocumentMoniker": "CodeAcademy\\Models\\Enums.cs",
-              "ToolTip": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Models\\Enums.cs",
-              "RelativeToolTip": "CodeAcademy\\Models\\Enums.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T23:43:58.076Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Form1.cs",
               "RelativeDocumentMoniker": "CodeAcademy\\Form1.cs",
@@ -285,20 +83,78 @@
               "RelativeToolTip": "CodeAcademy\\Form1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T23:43:42.966Z",
+              "WhenOpened": "2026-05-20T20:26:27.591Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Program.cs",
+              "RelativeDocumentMoniker": "CodeAcademy\\Program.cs",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Program.cs",
+              "RelativeToolTip": "CodeAcademy\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T23:48:07.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Views\\MainForm.cs",
+              "RelativeDocumentMoniker": "CodeAcademy\\Views\\MainForm.cs",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Views\\MainForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CodeAcademy\\Views\\MainForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T23:55:37.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CoursePresenter.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Presenters\\CoursePresenter.cs",
+              "RelativeDocumentMoniker": "CodeAcademy\\Presenters\\CoursePresenter.cs",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Presenters\\CoursePresenter.cs",
+              "RelativeToolTip": "CodeAcademy\\Presenters\\CoursePresenter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T23:46:27.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Lesson.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Models\\Lesson.cs",
+              "RelativeDocumentMoniker": "CodeAcademy\\Models\\Lesson.cs",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Models\\Lesson.cs",
+              "RelativeToolTip": "CodeAcademy\\Models\\Lesson.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAIwBMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T23:44:13.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Enums.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Models\\Enums.cs",
+              "RelativeDocumentMoniker": "CodeAcademy\\Models\\Enums.cs",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Models\\Enums.cs",
+              "RelativeToolTip": "CodeAcademy\\Models\\Enums.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T23:43:58.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Form1.cs",
               "RelativeDocumentMoniker": "CodeAcademy\\Form1.cs",
               "ToolTip": "C:\\Users\\sebas\\source\\repos\\CodeAcademy\\CodeAcademy\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "CodeAcademy\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T23:41:07.422Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-05-19T23:41:07.422Z"
             }
           ]
         }
