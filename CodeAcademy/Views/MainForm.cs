@@ -234,9 +234,9 @@ namespace CodeAcademy.Views
                 TextFormatFlags.VerticalCenter | TextFormatFlags.Left);
         }
 
-       
+        // ══════════════════════════════════════════
         //  TOPBAR
-       
+        // ══════════════════════════════════════════
         private void BuildTopBar()
         {
             pnlTopBar = new Panel
@@ -248,7 +248,7 @@ namespace CodeAcademy.Views
             };
             pnlTopBar.Paint += (s, e) =>
             {
-                // oe revise esto porfa Línea inferior sutil
+                // Línea inferior sutil
                 using var pen = new Pen(Color.FromArgb(220, 225, 240), 1f);
                 e.Graphics.DrawLine(pen, 0, pnlTopBar.Height - 1, pnlTopBar.Width, pnlTopBar.Height - 1);
             };
@@ -271,7 +271,7 @@ namespace CodeAcademy.Views
                 Location = new Point(29, 44)
             };
 
-            // Search box estilizado con borde redondeado y fondo claro pues es diseño 
+            // Search box estilizado
             pnlSearchBox = new Panel
             {
                 Size = new Size(280, 38),
@@ -329,11 +329,11 @@ namespace CodeAcademy.Views
             Controls.Add(pnlTopBar);
         }
 
-       
+        // ══════════════════════════════════════════
         //  CONTENIDO PRINCIPAL
-                private void BuildContent()
+        // ══════════════════════════════════════════
+        private void BuildContent()
         {
-            //con el pnl content organizamos las pestañas de los cursos de manera organizada
             pnlContent = new Panel
             {
                 Dock = DockStyle.Fill,
@@ -356,8 +356,9 @@ namespace CodeAcademy.Views
             Controls.Add(pnlContent);
         }
 
-       
+        // ══════════════════════════════════════════
         //  IMainView Implementation
+        // ══════════════════════════════════════════
         public void DisplayCourses(List<Course> courses)
         {
             flpCourses.SuspendLayout();
