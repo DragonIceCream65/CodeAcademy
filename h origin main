@@ -1,0 +1,64 @@
+[33mcommit 0c44da1bdf538e089d21508c73f5f55fbfeb0384[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Brigitte Lopez <brigittelopeztorres@gmail.com>
+Date:   Thu May 21 20:52:37 2026 -0500
+
+    Actualizando README
+
+[33mcommit b2d7ceeebd2e5df18e9b495347072229efead475[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Brigitte Lopez <brigittelopeztorres@gmail.com>
+Date:   Wed May 20 22:20:05 2026 -0500
+
+    Subiendo archivos
+
+[33mcommit b17cddd8856ba47864e5eb606748f76ce540a592[m
+Author: Wymet <116924632+DragonIceCream65@users.noreply.github.com>
+Date:   Wed May 20 17:39:45 2026 -0500
+
+    Diseño final y bien implementado
+
+[33mcommit d44cf1146dfef883979aa6b93a12d4ec4b90f37b[m
+Merge: 64b8065 a586206
+Author: Wymet <116924632+DragonIceCream65@users.noreply.github.com>
+Date:   Wed May 20 17:33:30 2026 -0500
+
+    Merge terminado
+
+[33mcommit 64b8065c7b98eb350afb186577d0b59075c36ec0[m
+Author: Wymet <116924632+DragonIceCream65@users.noreply.github.com>
+Date:   Wed May 20 17:25:09 2026 -0500
+
+    Diseño finales
+
+[33mcommit a586206fe3eb7cd68622e1b27c684a8bea6231a4[m
+Author: Sebastian Morales <116924632+DragonIceCream65@users.noreply.github.com>
+Date:   Wed May 20 17:19:31 2026 -0500
+
+    Fix installation steps in README.md
+    
+    Correct formatting and numbering in installation instructions.
+
+[33mcommit d31a654a215190eb70e2c5576eebb3203ea42c92[m
+Author: Sebastian Morales <116924632+DragonIceCream65@users.noreply.github.com>
+Date:   Wed May 20 17:18:23 2026 -0500
+
+    Update README.md
+
+[33mcommit a368a3d2aee6b9d62a764a31aded52a8ca9d56ce[m
+Author: Sebastian Morales <116924632+DragonIceCream65@users.noreply.github.com>
+Date:   Wed May 20 17:17:06 2026 -0500
+
+    Organizacion de texto
+
+[33mcommit 7ce98908e7ed7d5bc8f4aa8b27ecd6912d82b55d[m
+Author: Sebastian Morales <116924632+DragonIceCream65@users.noreply.github.com>
+Date:   Wed May 20 17:15:23 2026 -0500
+
+    Documentacion y explicacion del programa
+    
+    Added detailed project description, architecture, technologies, prerequisites, and installation instructions.
+
+[33mcommit 4210b7b9dfd89186a62c5bb4fa6a7eeec090721d[m
+Author: Wymet <116924632+DragonIceCream65@users.noreply.github.com>
+Date:   Wed May 20 14:36:41 2026 -0500
+
+    Primer commit Sebastian Morales
