@@ -12,7 +12,7 @@ namespace CodeAcademy.Presenters
         private readonly ICourseView _view;
 
         // Información del curso
-        private Course _course;
+        private Curso _course;
 
 
         /// Inicializa el presenter del curso.
@@ -20,7 +20,7 @@ namespace CodeAcademy.Presenters
         /// </summary>
         /// <param name="view">Vista del curso</param>
         /// <param name="course">Curso seleccionado</param>
-        public CoursePresenter(ICourseView view, Course course)
+        public CoursePresenter(ICourseView view, Curso course)
         {
             _view = view;
             _course = course;
@@ -32,7 +32,7 @@ namespace CodeAcademy.Presenters
 
         /// Marca una lección como completada
         /// y actualiza el progreso.
-        private void OnLessonCompleted(Lesson lesson)
+        private void OnLessonCompleted(Leccion lesson)
         {
             lesson.IsCompleted = true;
             UpdateProgress();

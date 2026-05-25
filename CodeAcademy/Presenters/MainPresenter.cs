@@ -18,7 +18,7 @@ namespace CodeAcademy.Presenters
         // Repositorio encargado de obtener los cursos
         private readonly CourseRepository _repository;
         // Lista que almacena todos los cursos disponible
-        private List<Course> _allCourses;
+        private List<Curso> _allCourses;
 
         /// Constructor del presenter principal.
         /// Inicializa la vista, el repositorio y carga los cursos.
