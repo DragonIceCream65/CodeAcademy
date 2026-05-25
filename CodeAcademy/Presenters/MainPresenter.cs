@@ -16,7 +16,7 @@ namespace CodeAcademy.Presenters
         // Referencia a la interfaz principal
         private readonly IMainView _view;
         // Repositorio encargado de obtener los cursos
-        private readonly CourseRepository _repository;
+        private readonly RepositorioCursos _repository;
         // Lista que almacena todos los cursos disponible
         private List<Curso> _allCourses;
 
@@ -26,7 +26,7 @@ namespace CodeAcademy.Presenters
 
         /// <param name="view">Vista principal de la aplicación</param>
         /// <param name="repository">Repositorio de cursos</param>
-        public MainPresenter(IMainView view, CourseRepository repository)
+        public MainPresenter(IMainView view, RepositorioCursos repository)
         {
             _view = view;
             _repository = repository;
