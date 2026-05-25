@@ -12,7 +12,7 @@ namespace CodeAcademy
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
-            Application.Run(new MainForm());
+            Application.Run(new FormularioPrincipal());
         }
     }
 }

@@ -10,11 +10,11 @@ namespace CodeAcademy.Presenters
     /// Presenter principal de la aplicación.
     /// Se encarga de conectar la vista con los datos de cursos.
     /// Controla la búsqueda, filtrado y visualización de cursos.
-    public class MainPresenter
+    public class PresentadorPrincipal
     {
 
         // Referencia a la interfaz principal
-        private readonly IMainView _view;
+        private readonly IVistaPrincipal _view;
         // Repositorio encargado de obtener los cursos
         private readonly RepositorioCursos _repository;
         // Lista que almacena todos los cursos disponible
@@ -26,7 +26,7 @@ namespace CodeAcademy.Presenters
 
         /// <param name="view">Vista principal de la aplicación</param>
         /// <param name="repository">Repositorio de cursos</param>
-        public MainPresenter(IMainView view, RepositorioCursos repository)
+        public PresentadorPrincipal(IVistaPrincipal view, RepositorioCursos repository)
         {
             _view = view;
             _repository = repository;

@@ -6,10 +6,10 @@ namespace CodeAcademy.Presenters
 
     /// Presenter encargado de controlar
     /// el progreso de un curso.
-    public class CoursePresenter
+    public class PresentadorCurso
     {
         // Vista del curso actual
-        private readonly ICourseView _view;
+        private readonly IVistaCurso _view;
 
         // Información del curso
         private Curso _course;
@@ -20,7 +20,7 @@ namespace CodeAcademy.Presenters
         /// </summary>
         /// <param name="view">Vista del curso</param>
         /// <param name="course">Curso seleccionado</param>
-        public CoursePresenter(ICourseView view, Curso course)
+        public PresentadorCurso(IVistaCurso view, Curso course)
         {
             _view = view;
             _course = course;
